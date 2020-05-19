@@ -4,4 +4,4 @@ RUN apt update && apt install -y logrotate cron
 
 VOLUME ["/etc/logrotate.d"]
 
-ENTRYPOINT cron -f
+ENTRYPOINT chown root:root /etc/logrotate.d/* && cron -f
