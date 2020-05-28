@@ -1,4 +1,7 @@
 
+docker-logrotate
+================
+
 Docker-compose example:
 
 .. code-block::
